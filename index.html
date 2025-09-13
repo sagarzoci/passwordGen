@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stylish Password Generator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/dd8c49730d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <h1 class="logo">🔐 PassGen</h1>
+    <div class="theme-switch-wrapper">
+      <label class="theme-switch" for="checkbox">
+        <input type="checkbox" id="checkbox" />
+        <span class="slider round">
+          <i class="fas fa-sun sun-icon"></i>
+          <i class="fas fa-moon moon-icon"></i>
+        </span>
+      </label>
+    </div>
+  </nav>
+
+  <!-- Main Container -->
+  <div class="container">
+    <h2>Password Generator</h2>
+
+    <!-- Result -->
+    <div class="result-container">
+      <textarea id="PasswordResult" placeholder="Click Generate..." readonly></textarea>
+      <button class="icon-btn" id="clipboardBtn"><i class="far fa-copy"></i></button>
+    </div>
+
+    <!-- Settings -->
+    <div class="settings">
+      <div class="setting">
+        <label>Password length</label>
+        <input type="number" id="Passwordlength" min="4" max="30" value="12" />
+      </div>
+      <div class="setting"><label>Include uppercase</label><input type="checkbox" id="uppercase" checked></div>
+      <div class="setting"><label>Include lowercase</label><input type="checkbox" id="lowercase" checked></div>
+      <div class="setting"><label>Include numbers</label><input type="checkbox" id="numbers" checked></div>
+      <div class="setting"><label>Include symbols</label><input type="checkbox" id="symbols" checked></div>
+    </div>
+
+    <!-- Generate Button -->
+    <div class="buttons">
+      <button class="btn generate" id="generateBtn"><i class="fas fa-key"></i> Generate</button>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
