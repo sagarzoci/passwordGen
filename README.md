@@ -29,7 +29,7 @@
 ![Screenshot 2]<img width="1919" height="1032" alt="Screenshot 2025-09-13 141638" src="https://github.com/user-attachments/assets/24bbee06-55db-48cb-8c2d-0b4b48d291e8" />
 
 
-> *Replace above links with your project screenshots.*
+> 
 
 ---
 
